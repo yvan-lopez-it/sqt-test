@@ -43,8 +43,10 @@ public class Main {
 
         // -------- Run --------
         CategoryService.getCategoryKeywords(homeAppliancesCategory).forEach(System.out::println);
-
-        System.out.println(CategoryService.getCategoryLevel(kitchenAppliancesCategory));
+        System.out.println();
+        CategoryService.getCategoryKeywords(generalAppliancesCategory).forEach(System.out::println);
+        System.out.println();
+        System.out.println("Level (zero based): " + CategoryService.getCategoryLevel(kitchenAppliancesCategory));
 
     }
 }
