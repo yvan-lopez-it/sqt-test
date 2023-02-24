@@ -1,33 +1,21 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Set;
 
-public class RootCategory {
-    private String name;
-    private Set<String> keyWords;
-    private List<RootCategory> subCategories = new ArrayList<>();
-
-    public RootCategory(String name, Set<String> keyWords) {
-        this.name = name;
-        this.keyWords = keyWords;
+public class RootCategory extends Category {
+    public RootCategory() {
+        super("Root", new HashSet<>(Arrays.asList("SquareTrade", "Insurance")));
     }
 
-    public void addSubCategory(RootCategory subCategory) {
-        this.subCategories.add(subCategory);
+    @Override
+    public Set<String> getAllKeywords() {
+        return getKeywords();
     }
 
-    public String getName() {
-        return name;
+    @Override
+    public void inheritKeywords() {
+        // Do nothing, root category has default keywords
     }
-
-    public Set<String> getKeyWords() {
-        return keyWords;
-    }
-
-    public List<RootCategory> getSubCategories() {
-        return subCategories;
-    }
-
 }

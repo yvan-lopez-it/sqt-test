@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e64f5a52-2d32-4abc-8b68-e1970025f1a1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqt-test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/RootCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/CategoryServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/SubCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/CategoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/RootCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/RootCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/CategoryServiceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,20 +39,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "create.test.in.the.same.root": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;create.test.in.the.same.root&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -69,8 +65,8 @@
       <recent name="service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CategoryServiceTest.testGetKeywordsForCategory">
-    <configuration name="CategoryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CategoryTest">
+    <configuration name="CategoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sqt-test" />
       <extension name="coverage">
         <pattern>
@@ -79,13 +75,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.CategoryServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="test.CategoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryServiceTest.testGetCategoryLevelIndirectChild" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoryTest.testGetCategoryKeywords_CategoryAndParentKeywords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sqt-test" />
       <extension name="coverage">
         <pattern>
@@ -94,14 +90,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.CategoryServiceTest" />
-      <option name="METHOD_NAME" value="testGetCategoryLevelIndirectChild" />
+      <option name="MAIN_CLASS_NAME" value="test.CategoryTest" />
+      <option name="METHOD_NAME" value="testGetCategoryKeywords_CategoryAndParentKeywords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryServiceTest.testGetCategoryLevelNotInTree" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoryTest.testGetCategoryKeywords_NoKeywords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sqt-test" />
       <extension name="coverage">
         <pattern>
@@ -110,14 +106,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.CategoryServiceTest" />
-      <option name="METHOD_NAME" value="testGetCategoryLevelNotInTree" />
+      <option name="MAIN_CLASS_NAME" value="test.CategoryTest" />
+      <option name="METHOD_NAME" value="testGetCategoryKeywords_NoKeywords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryServiceTest.testGetCategoryLevel_SameCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoryTest.testGetCategoryKeywords_OnlyParentKeywords" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sqt-test" />
       <extension name="coverage">
         <pattern>
@@ -126,14 +122,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.CategoryServiceTest" />
-      <option name="METHOD_NAME" value="testGetCategoryLevel_SameCategory" />
+      <option name="MAIN_CLASS_NAME" value="test.CategoryTest" />
+      <option name="METHOD_NAME" value="testGetCategoryKeywords_OnlyParentKeywords" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoryServiceTest.testGetKeywordsForCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CategoryTest.testGetCategoryLevel_SubCategory_NoParent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sqt-test" />
       <extension name="coverage">
         <pattern>
@@ -142,8 +138,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.CategoryServiceTest" />
-      <option name="METHOD_NAME" value="testGetKeywordsForCategory" />
+      <option name="MAIN_CLASS_NAME" value="test.CategoryTest" />
+      <option name="METHOD_NAME" value="testGetCategoryLevel_SubCategory_NoParent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -151,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CategoryServiceTest.testGetKeywordsForCategory" />
-        <item itemvalue="JUnit.CategoryServiceTest" />
-        <item itemvalue="JUnit.CategoryServiceTest.testGetCategoryLevel_SameCategory" />
-        <item itemvalue="JUnit.CategoryServiceTest.testGetCategoryLevelNotInTree" />
-        <item itemvalue="JUnit.CategoryServiceTest.testGetCategoryLevelIndirectChild" />
+        <item itemvalue="JUnit.CategoryTest" />
+        <item itemvalue="JUnit.CategoryTest.testGetCategoryKeywords_NoKeywords" />
+        <item itemvalue="JUnit.CategoryTest.testGetCategoryKeywords_OnlyParentKeywords" />
+        <item itemvalue="JUnit.CategoryTest.testGetCategoryKeywords_CategoryAndParentKeywords" />
+        <item itemvalue="JUnit.CategoryTest.testGetCategoryLevel_SubCategory_NoParent" />
       </list>
     </recent_temporary>
   </component>
