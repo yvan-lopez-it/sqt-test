@@ -13,23 +13,20 @@ public class SubCategory extends Category {
     }
 
     /**
-     * Get all keywords from a category.
+     * Get all keywords associated with a given category and its parent hierarchy.
      * <p>
-     * If the category itself does not have any keywords, it looks up to the parent hierarchy and inherits its keywords.
+     * This method returns a set of all keywords associated with a given category. If the category
+     * itself does not have any keywords, it looks up to the parent hierarchy and inherits its keywords.
      *
-     * @return A set of all keywords associated with a given category.
+     * @return A set of all keywords associated with a given category and its parent hierarchy.
      */
     @Override
     public Set<String> getAllKeywords() {
         Set<String> allKeywords = new HashSet<>(getKeywords());
 
-        if (allKeywords.isEmpty()) {
-            Category currentCategory = getParent();
-
-            while (currentCategory != null) {
-                allKeywords.addAll(currentCategory.getKeywords());
-                currentCategory = currentCategory.getParent();
-            }
+        // If the category has no keywords of its own, inherit keywords from parent hierarchy
+        if (allKeywords.isEmpty() && getParent() != null) {
+            allKeywords.addAll(getParent().getAllKeywords());
         }
 
         return allKeywords;

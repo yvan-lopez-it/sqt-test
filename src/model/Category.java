@@ -44,7 +44,10 @@ public abstract class Category {
         return Collections.unmodifiableList(subcategories);
     }
 
-    public void addSubcategory(Category subcategory) {
+    public void addSubcategory(Category subcategory) throws IllegalArgumentException {
+        if (subcategory == null) {
+            throw new IllegalArgumentException("Subcategory cannot be null");
+        }
         subcategories.add(subcategory);
     }
 
